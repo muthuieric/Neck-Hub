@@ -1,0 +1,119 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: grey;
+  }
+
+  nav .active a {
+    color: grey;
+  }
+  /* Main content styles */
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+  
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 30%;
+  height: 30px;
+}
+
+.submit-button {
+  padding: 12px 22px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.submit-button:hover {
+  color: gray;
+}
+
+
+  
+  /* Footer styles */
+  footer {
+    position: absolute;
+    background-color: #f8f8f8;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+ 
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  .scroll-container {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+  }
+  
+  .scroll-container img {
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+  }
+ 
