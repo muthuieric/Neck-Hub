@@ -8,7 +8,7 @@
   /* Body styles */
   body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     background-color: #f8f8f8;
   }
@@ -19,9 +19,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  
   nav ul {
     display: flex;
     list-style: none;
@@ -38,51 +39,53 @@
   }
   
   nav a:hover {
-    color: grey;
+    color: purple;
   }
 
   nav .active a {
-    color: grey;
+    color: purple;
   }
   /* Main content styles */
-  p {
-    text-align: center;
+  label {
+    display: flex;
+    font-weight: bold;
   }
 
-  img {
-    width: 200px;
-    height: 150px;
-  }
-  .center {
-    display: block;
-    margin: auto;
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } 
+  textarea {
+    height: 100px;
   }
   
-  
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-  width: 30%;
-  height: 30px;
-}
-
 .submit-button {
-  padding: 12px 22px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  padding: 12px 32px;
+  margin-left: 25px;
+  background-color: purple;
+  color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 
 }
-
 .submit-button:hover {
-  color: gray;
+  transform: scale(1.1);
 }
 
+
+.address{
+  text-align: center;
+  font-weight: bold;
+}
 
   
   /* Footer styles */
@@ -91,6 +94,7 @@ textarea {
     background-color: #f8f8f8;
     color: black;
     font-weight: bold;
+    text-align: center;
     padding: 10px;
     bottom: 0;
     width: 100%;
@@ -107,7 +111,7 @@ textarea {
   .scroll-container {
     background-color: white;
     overflow: auto;
-    white-space: nowrap;
+    white-space: nowrap; 
     padding: 20px;
   }
   
@@ -116,4 +120,46 @@ textarea {
     height: 300px;
     width: 300px;
   }
- 
+  
+
+  .card-container{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid ;
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+
+  }
+  
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+
+  .add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: purple;
+    text-align: center;
+    border: 0.16rem solid purple;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: purple;
+    color: white;
+  }
