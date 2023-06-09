@@ -4,6 +4,27 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav li {
+      margin-right: 0;
+      margin-bottom: 5px;
+
+    }
+    
+    nav a {
+      width: 100%;
+    }
+  }
+  
   
   /* Body styles */
   body {
@@ -126,14 +147,14 @@
     display: flex;
     justify-content: space-evenly;
     border: 1px solid ;
-    max-width: 800px;
+    width: 90%;
     min-height: 400px;
     margin-inline: auto;
 
   }
   
   .card {
-    width: 300px;
+    width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
